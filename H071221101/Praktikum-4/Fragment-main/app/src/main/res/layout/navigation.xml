@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="18dp"
+    android:background="@drawable/navbar"
+    android:layout_height="95dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/IV_Home"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IV_Home"
+            android:layout_centerHorizontal="true"
+            android:text="Home"
+            android:textColor="#6d4c2d"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/IV_Post"
+            android:layout_width="45dp"
+            android:layout_height="37dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/postingan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IV_Post"
+            android:layout_centerHorizontal="true"
+            android:text="Posting"
+            android:textColor="#6d4c2d"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/IV_Profile"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IV_Profile"
+            android:layout_centerHorizontal="true"
+            android:text="Profile"
+            android:textColor="#6d4c2d"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
