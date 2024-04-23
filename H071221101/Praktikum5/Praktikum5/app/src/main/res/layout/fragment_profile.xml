@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_profile1"
+    tools:context=".ProfileFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Profile"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:background="#FFF5EE"
+        android:textStyle="bold"
+        android:textColor="#6d4c2d"
+        android:textSize="20dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile2"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="100dp"
+        android:layout_margin="210dp"
+        android:layout_gravity="center|top"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/pp"/>
+
+    <TextView
+        android:id="@+id/tv_nama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="375dp"
+        android:text="L"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#be9266"
+        android:layout_gravity="center|top" />
+
+    <TextView
+        android:id="@+id/tv_username2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="420dp"
+        android:text="el____0o"
+        android:textStyle="bold"
+        android:textColor="#e5d3b3"
+        android:textSize="30dp" />
+
+</FrameLayout>
