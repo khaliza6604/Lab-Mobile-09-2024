@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_detail"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/internetOn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/user_item"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="More"
+            android:backgroundTint="#B8E2F2"
+            android:textColor="#6171A9"
+            app:cornerRadius="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pbOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/internetOff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivOff"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/error"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Connection Lost"
+            android:textColor="#6171A9"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#6171A9"
+            android:textSize="20sp"
+            android:text="No Internet Connection, Please Connect To Internet and Try again"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:layout_marginHorizontal="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:visibility="gone"
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Retry"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#B8E2F2"
+            android:textColor="#6171A9"
+            app:cornerRadius="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pbOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
